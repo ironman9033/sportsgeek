@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.section {
+    background: #343148;
+    height: auto;
+}
+
+.toolbar {
+    font-family: 'Mate SC', serif;
+    font-size: large;
+    background: rgb(60, 60, 182);
+    color: #fff;
+    padding: 15px;
+    width: 100%;
+}
+
+.row {
+    background: rgba(161, 157, 168, 0.795);
+    border-radius: 30px;
+    box-shadow: 12px 12px 22px grey;
+}
+
+img {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.btnlog {
+    border: none;
+    outline: none;
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.btnlog:hover {
+    background: white;
+    border: 1px solid;
+    color: black;
+}
+
+mat-form-field {
+    padding-top: 10px;
+    width: 100%;
+}
+
+.field-icon {
+    float: right;
+    margin-left: -25px;
+    /* margin-top: -25px; */
+    position: absolute;
+    /* z-index: 2; */
+    size: 100px;
+}
+
+.forgotPassword{
+  color: aquamarine;
+}
+
+@media only screen and (max-width: 480px) {
+
+    .section{
+        background-color: #fff;
+        height: auto;
+    }
+
+    .row {
+        background: rgba(161, 157, 168, 0.795);
+        border-radius: 0;
+        box-shadow: 12px 12px 22px grey;
+        display: flex;
+        flex-direction: column;
+        margin-top: auto;
+    }
+
+    img {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        margin-top: 20%;
+    }
+
+}
+
+@media only screen and (max-height: 670px) {
+    img {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        margin-top: 50%;
+    }
+}
+
+@media only screen and (min-height: 800px) {
+    img {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        margin-top: 10%;
+    }
+}
+
+@media only screen and (min-height: 800px) {
+    img {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        margin-top: 10%;
+    }
+}

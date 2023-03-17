@@ -1,0 +1,35 @@
+<div class="sub-container-1-inner">
+  <form [formGroup]="venueForm" (ngSubmit)="addVenue()">
+      <div class="title">
+          <span>  {{venueData === null ? 'Add Venue' : 'Update Venue'}} </span>
+      </div>
+      <div class="signup-container">
+          <div class="first">
+              <div class="field-container" *ngIf="venueData">
+                  <mat-form-field appearance="fill">
+                      <mat-label>ID</mat-label>
+                      <input matInput formControlName="venueId">
+                  </mat-form-field>
+              </div>
+
+              <div class="field-container">
+                  <mat-form-field appearance="fill" color="accent">
+                      <mat-label>Name</mat-label>
+                      <input matInput formControlName="name" autocomplete="off">
+                      <mat-error *ngIf="form.name.errors?.required">name is reqiured
+                      </mat-error>
+                      <mat-error *ngIf="form.name.errors?.minlength">name must have atleast 5 characters</mat-error>
+                      <mat-error *ngIf="form.name.errors?.maxlength"> name must have less than 50 characters</mat-error>
+                      <mat-error *ngIf="form.name.errors?.pattern">name is invalid</mat-error>
+                  </mat-form-field>
+              </div>
+
+          </div>
+      </div>
+      <div class="action-container">
+          <button mat-raised-button *ngIf="venueData" color="accent" type="submit">Update</button>
+          <button mat-raised-button *ngIf="!venueData" color="accent" type="submit">Add</button>
+          <span (click)="closeDialogBox()" class="cancel-btn">Cancel</span>
+      </div>
+  </form>
+</div>

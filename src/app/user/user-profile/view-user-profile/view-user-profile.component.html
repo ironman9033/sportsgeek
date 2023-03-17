@@ -1,0 +1,64 @@
+<body [style.background-image]="'url(' + profile + ')'">
+    <div class="wrapper">
+        <div class="left">
+            <img src="{{userData?.profilePicture}}" loading="lazy" onerror="this.src='assets/icons/icon-128x128.png'" width="100">
+            <div><i class="fas fa-trash-alt remove" title="Remove Profile Picture" (click)="RemoveProfilePicture()"></i></div>
+            <h4> {{userData?.firstName | uppercase}} {{userData?.lastName | uppercase}} </h4>
+            <p> @{{userData?.username}}</p>
+        </div>
+        <div class="right">
+            <div class="info">
+                <h3>information</h3>
+                <div class="info_data">
+                    <div class="data">
+                        <!-- <h4>Email</h4> -->
+                        <mat-icon class="emicon">email</mat-icon>
+                        <p> {{userData?.email}} </p>
+                    </div>
+                    <div class="data">
+                        <!-- <h4>Phone</h4> -->
+                        <mat-icon class="emicon">phone_iphone</mat-icon>
+                        <p>{{userData?.mobileNumber}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="projects">
+                <h3>Bet history</h3>
+                <div class="projects_data">
+                    <div class="data">
+                        <h4>Available Points</h4>
+                        <!-- <p class="blue" *ngFor="let userstats of userStats"> {{userstats?.availablePoints}} </p> -->
+                        <p class="blue"> {{userData?.availablePoints}} </p>
+                    </div>
+                    <div class="data">
+                        <h4>Winning Points</h4>
+                        <p class="green"> {{usersWinningLosingPoints?.winningPoints}} </p>
+                        <p class="green p_lower"> ({{usersWinningLosingPoints?.numberOfWinningMatches}} Matches) </p>
+                    </div>
+                    <div class="data">
+                        <h4>Loosing Points</h4>
+                        <p class="red"> {{usersWinningLosingPoints?.losingPoints}} </p>
+                        <p class="red p_lower"> ({{usersWinningLosingPoints?.numberOfLosingMatches}} Matches) </p>
+                    </div>
+                </div>
+            </div>
+            <div class="social_media">
+                <ul>
+                    <!-- <li href=""><i class="fab fa-facebook-f"></i></li>
+                    <li href=""><i class="fab fa-twitter"></i></li>
+                    <li href=""><i class="fab fa-instagram-square"></i></li> -->
+                    <!-- <li>
+                        <mat-icon>manage_accounts</mat-icon>
+                    </li> -->
+                    <button class="matbtn" mat-fab color="accent" (click)="openUpdateUserProfileForm(userData)" matTooltip="Update Profile">
+                        <mat-icon>manage_accounts</mat-icon>
+                    </button>
+
+                    <button class="matbtn" mat-fab color="accent" (click)="openUpdateUserPasswordForm()" matTooltip="Change Password">
+                        <mat-icon>password</mat-icon>
+                    </button>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>

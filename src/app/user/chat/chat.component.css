@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  /* min-height: 100vh; */
+  background: rgb(47, 47, 138);
+  font-family: "Roboto", sans-serif;
+}
+
+.chat__section {
+  width: 100%;
+  max-width: 60%;
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  /* padding-bottom: 70px; */
+  height: auto;
+  min-height: 90%;
+  border-radius: 0px 0px 4% 10px;
+  margin: 10px;
+}
+
+.brand {
+  padding: 10px;
+  background: dodgerblue;
+  display: flex;
+}
+
+.brand h1 {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.message__area {
+  height: 570px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  /* padding-top: 40px; */
+}
+
+.message {
+  padding: 20px;
+  border-radius: 4px;
+  margin-bottom: 40px;
+  max-width: 300px;
+  position: relative;
+}
+
+button {
+  border: 1px outset blue;
+  /* background-color: lightBlue; */
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.message {
+  background-color: dodgerblue;
+  padding: 10px;
+  color: #fff;
+  width: fit-content;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  /* overflow-y: auto; */
+  word-wrap: break-word;
+}
+
+.user-message {
+  margin-left: auto;
+  background-color: #fff;
+  color: black;
+}
+
+.tip {
+  margin-left: auto;
+  /* margin-top: 10px; */
+}
+
+.fa-sync-alt{
+  margin-left: auto;
+}
+
+.datetime {
+  font-size: 0.6em;
+  display: flex;
+  flex-direction: row;
+}
+
+.inner-message {
+  padding-right: 100px;
+}
+
+.contestLog {
+  align-self: center;
+  color: #fff;
+  font-size: 0.7em;
+  display: flex;
+  flex-direction: row;
+}
+
+.contest__log__section {
+  width: auto;
+  margin-right: 10px;
+  max-width: 90%;
+  background: #fff;
+  /* background: linear-gradient(to right, #0f0c29, #302b63, #24243e); */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  height: auto;
+  min-height: 90vh;
+  /* border-radius: 0px 0px 8% 4%; */
+}
+
+.message__area__contest {
+  height: auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+.contest_history {
+  /* background-color: dodgerblue; */
+  padding: 5px;
+  color: black;
+  width: fit-content;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  animation: mycolor 300s;
+  font-size: 0.7em;
+  animation: 4s forwards slidein;
+  text-align: center;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+    transform: skew(30deg, 20deg) rotate(10deg);
+  }
+  75% {
+    font-size: 300%;
+    margin-left: 5%;
+    width: 150%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+.icon {
+  font-size: 1.5em;
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 480px) {
+  /* STYLES HERE for BROWSER WINDOWS with a max-width of 480px.
+       This will work on desktops when the window is narrowed.  */
+
+  body {
+    height: auto;
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+  }
+
+  .chat__section {
+    width: auto;
+    min-width: 90%;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    /* padding-bottom: 70px; */
+    height: auto;
+    border-radius: 0px 0px 4% 10px;
+    margin-left: 10px;
+  }
+
+  .brand h1 {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    color: #fff;
+    font-weight: 500;
+    line-height: 2;
+  }
+
+  .message {
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 40px;
+    max-width: 300px;
+    position: relative;
+    font-size: 0.8rem;
+    background-color: #fff;
+    color: black;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    /* overflow-y: auto; */
+    word-wrap: break-word;
+  }
+
+  .user-message {
+    margin-left: auto;
+    background-color: dodgerblue;
+    color: #fff;
+  }
+
+
+  .contest__log__section {
+    width: auto;
+    margin-left: 10px;
+    max-width: 90%;
+    min-width: 36%;
+    background: #fff;
+    /* background: linear-gradient(to right, #0f0c29, #302b63, #24243e); */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    height: auto;
+    min-height: 90vh;
+    /* border-radius: 0px 0px 8% 4%; */
+    margin-bottom: 10px;
+  }
+}

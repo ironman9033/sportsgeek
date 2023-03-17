@@ -1,0 +1,73 @@
+<body>
+    <div class="container">
+        <h1 class="admin"> <b> Admin Dashboard </b></h1>
+    </div>
+
+    <div class="container parent">
+                <div class="baap">
+                    <div class="inner-content ">
+                        <div>
+                            <h1>Total Users : {{userData?.length}}</h1>
+                        </div>
+
+                    </div>
+                    <div class="sub-data">
+                        <div class="subdata-ka-beta">
+                            <h1> Active Users: </h1>
+                            <h1 class="green"> {{ activeStatusCounter(userData) }} </h1>
+                        </div>
+                        <span></span>
+                        <div  class="subdata-ka-beta">
+                            <h1> InActive Users: </h1>
+                            <h1 class="red"> {{ inactiveStatusCounter(userData) }} </h1>
+                        </div>
+                    </div>
+                </div>
+   
+                <div class="baap">
+                    <div class="inner-content ">
+                        <div >
+                            <h1>Total Matches : {{allMatch?.length}}</h1>
+                        </div>
+
+                    </div>
+                    <div class="sub-data">
+                        <div class="subdata-ka-beta">
+                            <h1>Matches Left :</h1>
+                            <h1 class="green"> {{upcomingMatches?.length}}
+                            </h1>
+                        </div>
+                        <span></span>
+                        <div class="subdata-ka-beta">
+                            <h1>Matches Declaration Left :</h1>
+                            <h1 class="red"> {{oldMatch?.length}} </h1>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- <mat-grid-tile>
+                <div class="inner-content">
+                    <div>
+                        <h1>Total Bets Placed Till Now : </h1>
+                    </div>
+                    <div>
+                        <h2> 55</h2>
+                    </div>
+                </div>
+            </mat-grid-tile> -->
+
+                <div class="inner-content">
+                    <div>
+                        <h1>Total Teams : {{teamData?.length}}</h1>
+                    </div>
+                </div>
+
+                
+                <div class="inner-content">
+                    <div class="subdata-ka-beta">
+                        <h1>Total Venues : {{venueData?.length}}</h1>
+                    </div>
+                </div>
+
+    </div>
+</body>

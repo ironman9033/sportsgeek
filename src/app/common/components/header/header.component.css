@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@200;300&display=swap');
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.space {
+    margin-right: 10px;
+}
+
+.ahome {
+    color: aliceblue;
+    text-decoration: none;
+    font-family: 'BioRhyme', serif;
+}
+
+.dropdownbtn {
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.home {
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+mat-icon {
+    font-size: x-large;
+}
+
+.bets {
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.leader-board {
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.my-matches {
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.profile {
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+mat-toolbar {
+    background: linear-gradient(45deg, #1318a5, #cc1ab3);
+}
+
+.logout {
+    background-color: #ccff00;
+    font-family: 'BioRhyme', serif;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 410px) {
+    /* STYLES HERE for BROWSER WINDOWS with a max-width of 480px. 
+       This will work on desktops when the window is narrowed.  */
+    
+    .home {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .bets{
+        margin-left: 10px;
+    }
+
+    .leader-board{
+        margin-left: 10px;
+    }
+
+    .my-matches{
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+
+    .profile {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .logout{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .dropdownbtn{
+        margin-right: 5px;
+    }
+
+}
+
+ /* different techniques for iPad screening */
+ @media only screen and (min-device-width: 701px) and (max-device-width: 915px) {
+    /* For portrait layouts only */
+
+    .ahome{
+        font-size: 0.7rem;
+        
+    }
+    .fa-comments{
+        font-size: large;
+    }
+
+    .fa-user-circle{
+        font-size: large;
+    }
+    
+  }
+
+  @media only screen and (min-device-width: 601px) and (max-device-width: 701px) {
+    /* For portrait layouts only */
+
+    .ahome{
+        font-size: 0.5rem;
+        
+    }
+    .fa-comments{
+        font-size: large;
+    }
+
+    .fa-user-circle{
+        font-size: large;
+    }
+
+    .dropdownbtn{
+        margin-right: 10px;
+    }
+    .profile {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .logout{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .home {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .bets{
+        margin-left: 10px;
+    }
+
+    .leader-board{
+        margin-left: 10px;
+    }
+
+    .my-matches{
+        margin-left: 10px;
+    }
+  }

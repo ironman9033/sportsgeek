@@ -1,0 +1,53 @@
+<body>
+  <div class="section">
+    <div class="container">
+      <div class="content-section">
+        <div class="title">
+          <h1>About Us</h1>
+        </div>
+        <div class="content">
+          <h3>BBD IPL (Online Fantasy Cricket Game)</h3>
+          <p>
+            The Indian Premier League (IPL) is a professional Twenty20 cricket
+            league, contested by eight teams based out of eight different Indian
+            cities. The league was founded by the Board of Control for Cricket
+            in India (BCCI) in 2007. It is usually held between March and May of
+            every year and has an exclusive window in the ICC Future Tours
+            Programme.
+          </p>
+          <p>
+            There have been 14 seasons of the IPL tournament. The current
+            IPL title holders are the Chennai Super Kings, who won the 2021 season.
+          </p>
+          <p>
+            IPL 2022 will start from 26 March.
+          </p>
+          <div class="button">
+            <a (click)="onNavigate()" routerLink>Read More</a>
+          </div>
+        </div>
+        <div class="social">
+
+          <!-- <a (click)="goToFacebook()"><i class="fab fa-facebook-f"></i></a>
+          <a (click)="goToTwitter()"><i class="fab fa-twitter"></i></a>
+          <a (click)="goToInstagram()"><i class="fab fa-instagram"></i></a> -->
+
+          <div class="icon-box">
+            <div class="box" (click)="goToFacebook()">
+                <i class="fab fa-facebook-f"></i>
+            </div>
+            <div class="box" (click)="goToTwitter()">
+                <i class="fab fa-twitter"></i>
+            </div>
+            <div class="box" (click)="goToInstagram()">
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
+        </div>
+      </div>
+      <div class="image-section">
+        <img src="assets/img/ipl.jpg" alt="" />
+      </div>
+    </div>
+  </div>
+</body>

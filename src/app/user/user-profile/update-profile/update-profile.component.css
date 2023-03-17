@@ -1,0 +1,118 @@
+.sub-container-1-inner {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.signup-container {
+    background-color: rgb(17, 72, 82);
+    display: flex;
+}
+
+.first {
+    padding: 30px 30px 10px 60px;
+}
+
+.first p {
+    font-weight: lighter;
+    font-family: Agency Fb;
+    font-size: 40px;
+    letter-spacing: 3px;
+    padding-bottom: 10px;
+}
+
+.second {
+    padding: 30px 60px 10px 30px;
+}
+
+.mat-form-field {
+    margin: 10px auto;
+    display: blocks;
+    width: 300px;
+}
+
+.mat-form-field input {
+    color: white;
+}
+
+.mat-raised-button {
+    margin: 30px auto;
+}
+
+.action-container {
+    text-align: right;
+    padding-right: 50px;
+    background-color: rgb(130, 214, 240);
+}
+
+.action-container>.mat-raised-button {
+    margin: 10px;
+}
+
+.title {
+    background-color: rgb(130, 214, 240);
+    padding: 10px 0px;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 480px) {
+
+    .sub-container-1-inner {
+        height: 90vh;
+        width: 230px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: center;
+    }
+
+    .title {
+        background-color: rgb(130, 214, 240);
+        padding: 10px 0px;
+        font-size: 18px;
+        width: auto;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .signup-container {
+        background-color: rgb(17, 72, 82);
+        display: flex;
+        flex-direction: column;
+        height: 90%;
+        overflow-y: auto;
+        width: auto;
+    }
+
+    .first {
+        padding: 0;
+    }
+
+    .second {
+        padding: 0;
+    }
+
+    .action-container {
+        background-color: rgb(130, 214, 240);
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mat-form-field {
+        margin: 0;
+        display: blocks;
+        width: auto;
+    }
+
+    .action-container>.mat-raised-button {
+        margin: 5px;
+    }
+}

@@ -1,0 +1,92 @@
+<body>
+    <section class="chat__section">
+        <div class="brand">
+            <img height="40" src="{{iplimage}}" alt="">
+            <h1> Chat </h1>
+            <!-- <i class="fas fa-sync-alt"></i> -->
+            <h6 class="tip">Tip : Press <i class="fab fa-windows"></i> + (.) to use emoji</h6>
+        </div>
+        <div #scrollBottom class="message__area">
+            <div style="display:flex; flex-direction:row" *ngFor="let chat of getChatData">
+                <div style="width: 40px;" *ngIf="chat.userId!=userId">
+                    <img src="{{chat.profilePicture}}" style="height: 30px; width: 30px; border-radius: 50%;" alt="{{chat.firstName.substr(0,1).toUpperCase()+chat.lastName.substr(0,1).toUpperCase()}}">
+                </div>
+                <div *ngIf="chat.userId!=userId" class="message"> {{chat.message}}
+                    <div *ngIf="chat.userId!=userId && chat.publicChatId!=null" class="datetime">
+                        <div class="inner-message">
+                            ~ {{chat.firstName +' '+ chat.lastName}}
+                        </div>
+                        <!-- {{chat.chatTimestamp | date:'short':'UTC'}} -->
+                        {{chat.chatTimestamp | date:'short'}}
+                    </div>
+                    <div *ngIf="chat.userId!=userId && chat.publicChatId==null" class="datetime">
+                        <div class="inner-message">
+                            ~ {{chat.firstName +' '+ chat.lastName}}
+                        </div>
+                        {{chat.chatTimestamp | date:'short'}}
+                    </div>
+                </div>
+
+                <div *ngIf="chat.userId==userId" class="message user-message"> {{chat.message}}
+                    <div *ngIf="chat.userId==userId && chat.publicChatId!=null" class="datetime">
+                        <!-- {{chat.chatTimestamp | date:'short':'UTC'}} -->
+                        {{chat.chatTimestamp | date:'short'}}
+                    </div>
+                    <div *ngIf="chat.userId==userId && chat.publicChatId==null" class="datetime">
+                        {{chat.chatTimestamp | date:'short'}}
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div style="display:flex; flex-direction:row" *ngFor="let item of messageArray">
+        <div style="width: 40px;" *ngIf="item.userId!=userId">
+          <img src="{{item.profilePicture}}" style="height: 30px; width: 30px; border-radius: 50%;"
+            alt="">
+        </div>
+        <div *ngIf="item.userId!=userId" class="message"> {{item.message}}
+          <div *ngIf="item.userId!=userId" class="datetime">
+            <div  class="inner-message">
+             ~ {{item.firstName}}
+            </div>
+            {{now | date:'shortTime':'UTC'}}
+          </div>
+        </div>
+
+        <div *ngIf="item.userId==userId" class="message user-message"> {{item.message}}
+          <div *ngIf="item.userId==userId" class="datetime"> {{item.chatTimestamp | date:'shortTime':'UTC'}} </div>
+        </div>
+
+      </div> -->
+        </div>
+        <div class="bottom">
+            <form [formGroup]="chatForm" fxFlex="100" fxLayout="row">
+                <input style="height:50px;padding-left: 10px;word-break: break-all" mat-input fxFlex="100" formControlName="message" (keyup)="keyUpFunction($event)" placeholder="Write a message..." [(ngModel)]="messagetxt" />
+
+                <button mat-raised-button color="accent" (click)="callAll()">
+          <mat-icon> send </mat-icon>
+        </button>
+            </form>
+        </div>
+    </section>
+
+    <section class="contest__log__section ">
+        <div class="brand">
+            <h1> Bet History </h1>
+            <!-- <i class="fas fa-sync-alt"></i> -->
+            <i class="fas fa-question-circle tip icon" [matTooltip]=tooltip></i>
+        </div>
+
+        <div class="message__area__contest">
+            <div class="contest_history" *ngFor="let c of contestLogData" [ngStyle]="{'background-color': diffDays(c.logTimestamp) < 1 && diffHrs(c.logTimestamp) < 1 && diffMins(c.logTimestamp) < 5 ? contestLogColor[1]: diffDays(c.logTimestamp) < 1 && diffHrs(c.logTimestamp) < 1 ? contestLogColor[2]: diffDays(c.logTimestamp) < 1 && diffHrs(c.logTimestamp) < 2 ? contestLogColor[3] : contestLogColor[4] }">
+
+              <div class='inside_log'>
+                {{c.message[0]}}
+              </div>
+              <div>
+                {{c.message[1]}}
+              </div>
+            </div>
+        </div>
+    </section>
+
+</body>

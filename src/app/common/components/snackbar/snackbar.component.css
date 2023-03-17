@@ -1,0 +1,36 @@
+.red {
+    background-color: #ff2020;
+    color: whitesmoke;
+}
+
+.green {
+    background-color: #0c8048;
+    color: whitesmoke;
+}
+
+.blue {
+    background-color: #2263b9;
+}
+
+.yellow {
+    background-color: yellow;
+    color: black;
+}
+
+.data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* color: whitesmoke; */
+    font-weight: bolder;
+}
+
+
+/* .data1 {
+    background-color: #ff2020;
+}
+
+.data2 {
+    background-color: #0c8048;
+} */

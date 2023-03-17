@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+body {
+    /* background-color: #3b3a3a; */
+    background: linear-gradient(to right, #01a9ac, #1c1f9b);
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    /* background: url('/assets/stadium'); */
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    align-self: flex-start;
+}
+
+.card {
+    /* position: absolute; */
+    /* top: 50%; */
+    left: 5%;
+    transform: translate(-4%, 5%);
+    width: auto;
+    min-width: 650px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.2);
+    height: auto;
+    margin: 40px;
+    cursor: pointer;
+    /* margin-bottom: 40px; */
+}
+
+.card:hover {
+    background: #fff;
+    /* box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.2); */
+}
+
+.left {
+    position: absolute;
+    bottom: 0%;
+    left: -120%;
+    width: 60%;
+    height: 30%;
+    transition: 0.5s;
+    box-sizing: border-box;
+    /* border-top: 5px solid #430064; */
+    transform: skewX(-5deg);
+}
+
+.card:hover>.left {
+    left: -10%;
+}
+
+.right {
+    position: absolute;
+    bottom: 0%;
+    right: -120%;
+    width: 60%;
+    height: 30%;
+    transition: 0.5s;
+    box-sizing: border-box;
+    /* border-top: 5px solid #ef9b0f; */
+    transform: skewX(-5deg);
+}
+
+.card:hover>.right {
+    right: -9%;
+}
+
+.card h2 {
+    width: auto;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.card:hover h2 {
+    background: #ff0057;
+    color: #fff;
+}
+
+.match-details {
+    position: relative;
+    /* color: black; */
+}
+
+.versus {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    border-radius: 50%;
+    background: #e91e63;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    margin: 20px auto;
+}
+
+.date {
+    margin: 20px 0 0;
+}
+
+.team1 {
+    width: auto;
+    float: left;
+    padding: 10px 20px 20px;
+    box-sizing: border-box;
+    text-align: center;
+    height: auto;
+}
+
+.team2 {
+    width: auto;
+    float: left;
+    padding: 10px 20px 20px;
+    box-sizing: border-box;
+    text-align: center;
+    height: auto;
+}
+
+.team1 img,
+.team2 img {
+    width: 150px;
+    height: auto;
+}
+
+.details {
+    width: auto;
+    min-width: 39%;
+    min-height: 200px;
+    float: left;
+    text-align: center;
+    height: auto;
+}
+
+h3.team-name {
+    padding: 15px 0 0;
+    /* margin-bottom: 15px; */
+    text-align: right;
+    transition: 0.5s;
+    margin-top: 40px;
+    /* text-decoration: 10px solid; */
+}
+
+.team1 h3.team-name {
+    text-align: left;
+}
+
+.card:hover .team1 h3.team-name {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+}
+
+.card:hover .team2 h3.team-name {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+}
+
+mat-tab-group {
+    width: auto;
+    /* height: 82.3vh; */
+    min-height: 90vh;
+}
+
+.mat-tab-body-content {
+    overflow-y: hidden;
+}
+
+.alt {
+    color: #fff;
+    margin-top: 40%;
+}
+
+
+@media only screen and (max-width: 480px) {
+    /* STYLES HERE for BROWSER WINDOWS with a max-width of 480px. 
+       This will work on desktops when the window is narrowed.  */
+
+       .card {
+        transform: translate(-4%, 5%);
+        width: 270px;
+        background: rgba(255, 255, 255, 0.5);
+        border-radius: 10px;
+        overflow: hidden;
+        transition: 0.5s;
+        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.2);
+        height: 310px;
+        margin: 30px;
+    }
+    
+    .card {
+        background: #fff;
+        min-width: 270px;
+        /* box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.2); */
+    }
+    
+    .left {
+        position: absolute;
+        bottom: 0%;
+        left: -120%;
+        width: 60%;
+        height: 30%;
+        transition: 0.5s;
+        box-sizing: border-box;
+        /* border-top: 5px solid #430064; */
+        transform: skewX(-5deg);
+    }
+    
+    .card>.left {
+        left: -10%;
+    }
+    
+    .right {
+        position: absolute;
+        bottom: 0%;
+        right: -100%;
+        width: 60%;
+        height: 30%;
+        transition: 0.5s;
+        box-sizing: border-box;
+        /* border-top: 5px solid #ef9b0f; */
+        transform: skewX(-5deg);
+    }
+    
+    .card>.right {
+        right: -9%;
+    }
+    
+    .card h2 {
+        width: auto;
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+        box-sizing: border-box;
+        transition: 0.5s;
+    }
+    
+    .card h2 {
+        background: #ff0057;
+        color: #fff;
+    }
+    
+    .match-details {
+        position: relative;
+        /* color: black; */
+    }
+    
+    .versus {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+        border-radius: 50%;
+        background: #e91e63;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        line-height: 2.3;
+    }
+    
+    .date {
+        margin: 20px 0 0;
+        font-size: 0.6rem;
+        line-height: 1.5;
+        width: 100%;
+    }
+    
+    .team1 {
+        width: 100px;
+        float: left;
+        padding: 10px 20px 20px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .venue{
+        font-size: 0.6rem;
+        line-height: 1;
+    }
+    
+    .team2 {
+        width: 100px;
+        float: left;
+        padding: 10px 20px 20px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    
+    .team1 img,
+    .team2 img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .details {
+        width: 25%;
+        min-height: 20%;
+        float: left;
+        text-align: center;
+        min-width: 0;
+    }
+    
+    h3.team-name {
+        padding: 15px 0 0;
+        /* margin-bottom: 15px; */
+        text-align: right;
+        transition: 0.5s;
+        margin-top: 75px;
+        /* text-decoration: 10px solid; */
+        font-size: 0.7rem;
+        line-height: 1;
+    }
+    
+    h3.team-points {
+        /* padding: 15px 0 0; */
+        /* margin-bottom: 15px; */
+        text-align: right;
+        transition: 0.5s;
+        /* margin-top: 1px; */
+        /* text-decoration: 10px solid; */
+        font-size: 0.7rem;
+    }
+    
+    .team1 h3.team-name {
+        text-align: left;
+        font-size: 0.7rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bolder;
+    }
+    
+    .team1 h3.team-points {
+        text-align: left;
+        font-size: 0.7rem;
+    }
+    
+    .card .team1 h3.team-name {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: large;
+        font-size: 0.7rem;
+    }
+    
+    .card .team2 h3.team-name {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: large;
+        font-size: 0.7rem;
+    }
+
+}

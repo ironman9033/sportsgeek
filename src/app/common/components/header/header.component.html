@@ -1,0 +1,154 @@
+<header>
+    <mat-toolbar class="mat-elevation-z8">
+
+        <!-- SHIFT LEFT -->
+
+        <!-- USER -->
+
+        <div class="home">
+            <a (click)="goToHome()" class="ahome" title="Home">
+                <mat-icon>home</mat-icon>
+                <!-- <span class="space"> <a class="ahome">SportsGeek</a>  </span> -->
+            </a>
+        </div>
+
+        <div class="bets" *ngIf="isRoleUser()">
+            <a routerLink="User/match-list" class="ahome" title="Match List">
+                <div *ngIf="deviceXs">
+                    <mat-icon>monetization_on</mat-icon>
+                </div>
+                <div *ngIf="!deviceXs">
+                    <mat-icon>monetization_on</mat-icon>Place Bets
+                </div>
+            </a>
+        </div>
+
+        <div class="leader-board" *ngIf="isRoleUser()">
+            <a routerLink="User/leader-board" class="ahome" title="Leaderboard">
+                <div *ngIf="deviceXs">
+                    <mat-icon>leaderboard</mat-icon>
+                </div>
+                <div *ngIf="!deviceXs">
+                    <mat-icon>leaderboard</mat-icon>Leader Board
+                </div>
+            </a>
+        </div>
+
+        <div class="my-matches" *ngIf="isRoleUser()">
+            <a routerLink="User/my-matches" class="ahome" title="My Matches">
+                <div *ngIf="deviceXs">
+                    <mat-icon>sports_cricket</mat-icon>
+                </div>
+                <div *ngIf="!deviceXs">
+                    <mat-icon>sports_cricket</mat-icon>My Matches
+                </div>
+            </a>
+        </div>
+
+        <!-- <div class="my-matches" *ngIf="isRoleUser()">
+            <a routerLink="User/chat" class="ahome" title="Chat">
+                <div *ngIf="deviceXs">
+                    <i class="far fa-comments"></i>
+                </div>
+                <div *ngIf="!deviceXs">
+                    <i class="far fa-comments"></i> Chat
+                </div>
+            </a>
+        </div> -->
+
+        <!-- ADMIN -->
+
+        <div class="bets" *ngIf="!isRoleUser()">
+            <a routerLink="Admin/match-list" class="ahome" title="Match List">
+                <div *ngIf="deviceXs">
+                    <mat-icon>monetization_on</mat-icon>
+                </div>
+                <div *ngIf="!deviceXs">
+                    <mat-icon>monetization_on</mat-icon>Place Bets
+                </div>
+            </a>
+        </div>
+
+        <div class="leader-board" *ngIf="!isRoleUser()">
+            <a routerLink="Admin/leader-board" class="ahome" title="Leaderboard">
+                <div *ngIf="deviceXs">
+                    <mat-icon>leaderboard</mat-icon>
+                </div>
+                <div *ngIf="!deviceXs">
+                    <mat-icon>leaderboard</mat-icon>Leader Board
+                </div>
+            </a>
+        </div>
+
+        <div class="my-matches" *ngIf="!isRoleUser()">
+            <a routerLink="Admin/my-matches" class="ahome" title="My Matches">
+                <div *ngIf="deviceXs">
+                    <mat-icon>sports_cricket</mat-icon>
+                </div>
+                <div *ngIf="!deviceXs">
+                    <mat-icon>sports_cricket</mat-icon>My Matches
+                </div>
+            </a>
+        </div>
+
+        <!-- <div class="my-matches" *ngIf="isRoleAdmin()">
+            <a routerLink="Admin/chat" class="ahome" title="Chat">
+                <div *ngIf="deviceXs">
+                    <i class="far fa-comments"></i>
+                </div>
+                <div *ngIf="!deviceXs">
+                    <i class="far fa-comments"></i> Chat
+                </div>
+            </a>
+        </div> -->
+
+        <!-- SHIFT RIGHT -->
+
+        <span class="example-spacer"></span>
+
+        <div class="profile" *ngIf="isRoleUser()">
+            <a routerLink="User/view-your-profile" class="ahome" title="View Your Profile">
+                <!-- <mat-icon>account_box</mat-icon> -->
+                <i class="fas fa-user-circle"></i>
+            </a>
+        </div>
+
+        <div class="profile" *ngIf="!isRoleUser()">
+            <a routerLink="Admin/view-your-profile" class="ahome" matTooltip="View Your Profile">
+                <!-- <mat-icon>account_box</mat-icon> -->
+                <i class="fas fa-user-circle"></i>
+            </a>
+        </div>
+
+
+        <!-- ADMIN -->
+
+        <div class="row">
+            <div class="col">
+                <div ngbDropdown class="d-inline-block dropdownbtn">
+
+                    <button class="btn btn-primary" id="dropdownBasic1" ngbDropdownToggle *ngIf="authservice1.isLoggedIn() && isRoleAdmin() && !deviceXs">Manage</button>
+
+                    <button class="btn btn-primary" id="dropdownBasic1" ngbDropdownToggle *ngIf="authservice1.isLoggedIn() && isRoleAdmin() && deviceXs"></button>
+
+                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                        <button ngbDropdownItem routerLink="Admin/manage-matches">Matches</button>
+                        <button ngbDropdownItem routerLink="Admin/manage-old-matches">Update Match Result</button>
+                        <button ngbDropdownItem routerLink="Admin/manage-user">Users</button>
+                        <button ngbDropdownItem routerLink="Admin/manage-team">Team</button>
+                        <button ngbDropdownItem routerLink="Admin/manage-recharge">Recharge</button>
+                        <button ngbDropdownItem routerLink="Admin/manage-venue">Venue</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <a mat-raised-button class="logout" *ngIf="authservice1.isLoggedIn() && !deviceXs" (click)="logout()">Logout</a>
+
+        <a mat-raised-button class="logout" *ngIf="authservice1.isLoggedIn() && deviceXs" (click)="logout()">
+            <mat-icon>logout</mat-icon>
+        </a>
+
+    </mat-toolbar>
+</header>

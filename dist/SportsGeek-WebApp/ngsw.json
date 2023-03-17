@@ -1,0 +1,96 @@
+{
+  "configVersion": 1,
+  "timestamp": 1679053232853,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/1.f06fd35cb6b6c78a5d0e.js",
+        "/5.45b0add7ec0d74baa6c4.js",
+        "/6.4a7a9446d39e01c4f8c7.js",
+        "/index.html",
+        "/main.e4b9ae9f88db19b2ff75.js",
+        "/manifest.webmanifest",
+        "/polyfills.ea63db2410ca36a0e724.js",
+        "/runtime.b20da509915a9b387af8.js",
+        "/scripts.a2bdafcd693adeb1e0a2.js",
+        "/styles.3a722fc9f0fbdbb0286c.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/assets/favicon.ico",
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "https://bbdipl.herokuapp.com",
+      "patterns": [
+        "\\/.*"
+      ],
+      "strategy": "freshness",
+      "maxSize": 100,
+      "maxAge": 0,
+      "timeoutMs": 60000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "/1.f06fd35cb6b6c78a5d0e.js": "095b83085d1b7d77f86cff36c4ee9dd9cb4724e3",
+    "/5.45b0add7ec0d74baa6c4.js": "63b3ce90d1d000ee0d38c743da4be5d8bb365907",
+    "/6.4a7a9446d39e01c4f8c7.js": "d7c5e2c838fe7e63ecd05cba83efe93780cba0af",
+    "/assets/favicon.ico": "fd3ea126f9f74e143ed26b745e242daad7f19407",
+    "/assets/icons/icon-128x128.png": "716ea2e077b7c90d8dffd71fa47cbfb2e9f219cf",
+    "/assets/icons/icon-144x144.png": "7dca4f27b6a741ab4dce29908058889c0e7c0cfd",
+    "/assets/icons/icon-152x152.png": "e317465e1dcb46b272a221cb43a0ee3e8422e19b",
+    "/assets/icons/icon-192x192.png": "2e8d5c34036e66583590ddf956192892e2529d06",
+    "/assets/icons/icon-384x384.png": "3519a5a47d3ee4f7c0be51c9ad2249babdbd93ea",
+    "/assets/icons/icon-512x512.png": "3afb27f586e40380e3ab0933b7fd6a30cb4b7f10",
+    "/assets/icons/icon-72x72.png": "74de3dfc4f61ed05093193883439b132b46492f2",
+    "/assets/icons/icon-96x96.png": "c2c5feacabb3e28385cdef8fa90d5c1aabce5da7",
+    "/index.html": "3758c959b08ea965dbf054af76e17d64fb625f28",
+    "/main.e4b9ae9f88db19b2ff75.js": "00a9935dc2bcf71cdde2d7ce9cc3891e9713e6ea",
+    "/manifest.webmanifest": "7126710f3c51f694f263e1f4386fb80a419e31ef",
+    "/polyfills.ea63db2410ca36a0e724.js": "4eda8cc80e4a62c2a4a55cb83eb73dcd3005d0b6",
+    "/runtime.b20da509915a9b387af8.js": "e9eb42479bf01a9cc2faf150856ab06f560180e3",
+    "/scripts.a2bdafcd693adeb1e0a2.js": "d8f3ab64609ee0d908cb06302fffe4d2d9177ce5",
+    "/styles.3a722fc9f0fbdbb0286c.css": "66995a491d3c9bcbab4bc3538a659056bdcecbd9"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^https:\\/\\/bbdipl\\.herokuapp\\.com\\/User\\/chat$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}

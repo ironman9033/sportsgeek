@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@200;300&display=swap');
+.customf {
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /* background: linear-gradient(45deg, #ccff00, maroon, #FF5F1F); */
+    background: linear-gradient(45deg, #cc1ab3, #1318a5);
+    /* text-align: center; */
+}
+
+.text-light {
+    font-size: 1.1em;
+    font-family: 'BioRhyme', serif;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+}
+
+a {
+    /* text-decoration: none; */
+    color: white;
+    margin-right: 20px;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+@media only screen and (max-width: 480px) {
+    /* STYLES HERE for BROWSER WINDOWS with a max-width of 480px. 
+       This will work on desktops when the window is narrowed.  */
+
+    .footer-content{
+        font-size: 0.6em;
+    }
+}

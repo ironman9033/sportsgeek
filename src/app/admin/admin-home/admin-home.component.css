@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+body {
+    background: linear-gradient(to right, rgb(38, 185, 136), rgb(0, 98, 128));
+    height: 90vh;
+}
+
+.admin {
+    font-family: 'Lora', serif;
+}
+
+.baap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.baap h1 {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.sub-data {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    height: inherit;
+}
+
+.parent {
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid rgb(24, 14, 167);
+
+}
+
+.inner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: rgb(0, 140, 255);
+    color: #fff;
+}
+
+.green {
+    text-align: center;
+    color: green;
+}
+
+.red {
+    text-align: center;
+    color: red;
+}
+
+span {
+    padding-right: 100px;
+}
+
+/* .active-user{
+    display: flex;
+    flex-direction: row;
+} */
+
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+    /* STYLES HERE for BROWSER WINDOWS with a max-width of 480px. 
+       This will work on desktops when the window is narrowed.  */
+    
+       body{
+        height: 80vh;
+       }
+
+    .baap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        justify-content: space-between;
+    }
+
+    .baap h1 {
+        /* margin-top: 20px; */
+        width: auto;
+        height: auto;
+    }
+
+    .inner-content {
+        
+        font-size: 0.5rem;
+        height: auto;
+    }
+
+    .sub-data h1{
+        display: flex;
+        flex-direction: row;
+        font-size: 0.7rem;
+    }
+
+    .subdata-ka-beta{
+        display: flex;
+        flex-direction: row;
+        height: fit-content;
+        width: auto;
+    }
+
+    .sub-data{
+        height: inherit;
+    }
+
+    .inner-content h1{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* styles for browsers larger than 960px; */
+
+    body{
+        height: auto;
+    }
+
+    .baap h1{
+        font-size: 1rem;
+
+    }
+    .sub-data{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
