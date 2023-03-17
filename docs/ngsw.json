@@ -1,0 +1,98 @@
+{
+  "configVersion": 1,
+  "timestamp": 1679057949194,
+  "index": "C:/Program Files/Git/dist/SportsGeek-WebApp/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "C:/Program Files/Git/dist/SportsGeek-WebApp/admin-admin-module.js",
+        "C:/Program Files/Git/dist/SportsGeek-WebApp/default~admin-admin-module~user-user-module.js",
+        "C:/Program Files/Git/dist/SportsGeek-WebApp/index.html",
+        "C:/Program Files/Git/dist/SportsGeek-WebApp/main.js",
+        "C:/Program Files/Git/dist/SportsGeek-WebApp/manifest.webmanifest",
+        "C:/Program Files/Git/dist/SportsGeek-WebApp/polyfills.js",
+        "C:/Program Files/Git/dist/SportsGeek-WebApp/runtime.js",
+        "C:/Program Files/Git/dist/SportsGeek-WebApp/scripts.js",
+        "C:/Program Files/Git/dist/SportsGeek-WebApp/styles.css",
+        "C:/Program Files/Git/dist/SportsGeek-WebApp/user-user-module.js",
+        "C:/Program Files/Git/dist/SportsGeek-WebApp/vendor.js"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "C:/Program Files/Git/dist/SportsGeek-WebApp/assets/favicon.ico",
+        "C:/Program Files/Git/dist/SportsGeek-WebApp/assets/icons/icon-128x128.png",
+        "C:/Program Files/Git/dist/SportsGeek-WebApp/assets/icons/icon-144x144.png",
+        "C:/Program Files/Git/dist/SportsGeek-WebApp/assets/icons/icon-152x152.png",
+        "C:/Program Files/Git/dist/SportsGeek-WebApp/assets/icons/icon-192x192.png",
+        "C:/Program Files/Git/dist/SportsGeek-WebApp/assets/icons/icon-384x384.png",
+        "C:/Program Files/Git/dist/SportsGeek-WebApp/assets/icons/icon-512x512.png",
+        "C:/Program Files/Git/dist/SportsGeek-WebApp/assets/icons/icon-72x72.png",
+        "C:/Program Files/Git/dist/SportsGeek-WebApp/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "https://bbdipl.herokuapp.com",
+      "patterns": [
+        "\\/.*"
+      ],
+      "strategy": "freshness",
+      "maxSize": 100,
+      "maxAge": 0,
+      "timeoutMs": 60000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "C:/Program Files/Git/dist/SportsGeek-WebApp/admin-admin-module.js": "9a3c242c0efb2d777706ed09874a4d40a44320e1",
+    "C:/Program Files/Git/dist/SportsGeek-WebApp/assets/favicon.ico": "fd3ea126f9f74e143ed26b745e242daad7f19407",
+    "C:/Program Files/Git/dist/SportsGeek-WebApp/assets/icons/icon-128x128.png": "716ea2e077b7c90d8dffd71fa47cbfb2e9f219cf",
+    "C:/Program Files/Git/dist/SportsGeek-WebApp/assets/icons/icon-144x144.png": "7dca4f27b6a741ab4dce29908058889c0e7c0cfd",
+    "C:/Program Files/Git/dist/SportsGeek-WebApp/assets/icons/icon-152x152.png": "e317465e1dcb46b272a221cb43a0ee3e8422e19b",
+    "C:/Program Files/Git/dist/SportsGeek-WebApp/assets/icons/icon-192x192.png": "2e8d5c34036e66583590ddf956192892e2529d06",
+    "C:/Program Files/Git/dist/SportsGeek-WebApp/assets/icons/icon-384x384.png": "3519a5a47d3ee4f7c0be51c9ad2249babdbd93ea",
+    "C:/Program Files/Git/dist/SportsGeek-WebApp/assets/icons/icon-512x512.png": "3afb27f586e40380e3ab0933b7fd6a30cb4b7f10",
+    "C:/Program Files/Git/dist/SportsGeek-WebApp/assets/icons/icon-72x72.png": "74de3dfc4f61ed05093193883439b132b46492f2",
+    "C:/Program Files/Git/dist/SportsGeek-WebApp/assets/icons/icon-96x96.png": "c2c5feacabb3e28385cdef8fa90d5c1aabce5da7",
+    "C:/Program Files/Git/dist/SportsGeek-WebApp/default~admin-admin-module~user-user-module.js": "fe5a5b4dad7c7bb0f02201e7cffc433f2d9ff34d",
+    "C:/Program Files/Git/dist/SportsGeek-WebApp/index.html": "3c391d8cfea46c9bd30c6a75b8bcd08fdc655971",
+    "C:/Program Files/Git/dist/SportsGeek-WebApp/main.js": "9c0f1e3ab4915d6ddfc444df0c584a93dfab8a2a",
+    "C:/Program Files/Git/dist/SportsGeek-WebApp/manifest.webmanifest": "f47a8db3617731d144f476fbd6ea58170d20b89f",
+    "C:/Program Files/Git/dist/SportsGeek-WebApp/polyfills.js": "b935aa71b8fd945c9092b33da308a115547a8915",
+    "C:/Program Files/Git/dist/SportsGeek-WebApp/runtime.js": "757d8499647556dde6680be184e7c6528477c12c",
+    "C:/Program Files/Git/dist/SportsGeek-WebApp/scripts.js": "22fa30a6b5fb90d950eb8e41e4f8375822713ff0",
+    "C:/Program Files/Git/dist/SportsGeek-WebApp/styles.css": "c5de8e0fd3a0a715dc780de1a0f2da20372df9c2",
+    "C:/Program Files/Git/dist/SportsGeek-WebApp/user-user-module.js": "ae4ccd1a913f0ba1c08d77f8786cf89ecc0760d7",
+    "C:/Program Files/Git/dist/SportsGeek-WebApp/vendor.js": "11f97814b7acc7c09bb5d41cbc8d21969e649371"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^https:\\/\\/bbdipl\\.herokuapp\\.com\\/User\\/chat$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
